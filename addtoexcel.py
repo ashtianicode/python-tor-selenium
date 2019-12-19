@@ -15,6 +15,6 @@ def makeexcelfile(dest_filename):
 def addtoexcel(excelfilename,itemindex,phone):
             wb = load_workbook(excelfilename)
             ws_text = wb["sheetname"]
-            lastrow = len(tuple(ws_text.rows)) #last row
-            ws_text.cell(row=lastrow +1, column=1, value=phone)
+            lastrow = len(tuple(ws_text.rows)) 
+            ws_text.cell(row=lastrow +1, column=1, value="____")
             wb.save(filename = excelfilename)
